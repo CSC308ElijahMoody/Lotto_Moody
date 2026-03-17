@@ -19,7 +19,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var numLabel6: UILabel!
     @IBOutlet weak var numLabel7: UILabel!
 
-    
+    func getColors(from number: Int?) -> (backgroundColor: UIColor, textColor: UIColor){
+        if let number = number{
+            switch number
+            {
+            case 1...10:
+                return (UIColor.red, UIColor.white)
+            case 11...20:
+                return (UIColor.green, UIColor.black)
+            case 21...30:
+                return (UIColor.blue, UIColor.white)
+            case 31...40:
+                return (UIColor.yellow, UIColor.black)
+            case 41...45:
+                return (UIColor.gray, UIColor.white)
+            default:
+                break
+            }
+        }
+        return (UIColor.purple,UIColor.white)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,23 +46,8 @@ class ViewController: UIViewController {
         let rand1 = Int.random(in: 1...45)
         numLabel1.text = "\(rand1)"//String Interpolation
 
-        
-        switch rand1
-        {
-        case 1...10:
-            numLabel1.backgroundColor = UIColor.red
-        case 11...20:
-            numLabel1.backgroundColor = UIColor.green
-        case 21...30:
-            numLabel1.backgroundColor = UIColor.blue
-        case 31...40:
-            numLabel1.backgroundColor = UIColor.yellow
-        case 41...45:
-            numLabel1.backgroundColor = UIColor.green
-        default:
-            break
-        }
-        
+        numLabel1.backgroundColor = getColors(from: rand1).backgroundColor
+        numLabel1.textColor = getColors(from: rand1).textColor
     }
     
     override func viewWillAppear(_ animated: Bool) {
