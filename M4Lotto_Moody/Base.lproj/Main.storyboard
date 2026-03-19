@@ -82,15 +82,20 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="numLabel" destination="Gb5-kB-9Ry" id="pLq-e0-7LD"/>
-                        <outlet property="numLabel1" destination="Gb5-kB-9Ry" id="77P-Px-h42"/>
-                        <outlet property="numLabel2" destination="hwe-VR-QC2" id="QiU-Wa-Mlc"/>
-                        <outlet property="numLabel3" destination="mxb-WY-QQH" id="FRe-J6-MdM"/>
-                        <outlet property="numLabel4" destination="RDi-iN-dAJ" id="yrw-Uf-id9"/>
-                        <outlet property="numLabel5" destination="o4o-yI-1GU" id="7VN-XV-hmP"/>
-                        <outlet property="numLabel6" destination="3ej-RV-k0C" id="gj3-cD-2hS"/>
-                        <outlet property="numLabel7" destination="F02-5v-3Ae" id="eGb-yj-SYN"/>
-                        <outlet property="plusLabel" destination="5aq-Pr-B63" id="mli-03-LFL"/>
+                        <outlet property="numLabel1" destination="Gb5-kB-9Ry" id="K9s-05-ccS"/>
+                        <outlet property="numLabel2" destination="hwe-VR-QC2" id="MoM-ir-qly"/>
+                        <outlet property="numLabel3" destination="mxb-WY-QQH" id="54L-Bb-ExH"/>
+                        <outlet property="numLabel4" destination="RDi-iN-dAJ" id="dcq-al-hyg"/>
+                        <outlet property="numLabel5" destination="o4o-yI-1GU" id="G30-lh-Wwk"/>
+                        <outlet property="numLabel6" destination="3ej-RV-k0C" id="qMi-FN-HRA"/>
+                        <outlet property="numLabel7" destination="F02-5v-3Ae" id="Zd7-NQ-akM"/>
+                        <outletCollection property="labels" destination="Gb5-kB-9Ry" collectionClass="NSMutableArray" id="L9i-qo-W1J"/>
+                        <outletCollection property="labels" destination="hwe-VR-QC2" collectionClass="NSMutableArray" id="Dlh-Lo-vfR"/>
+                        <outletCollection property="labels" destination="mxb-WY-QQH" collectionClass="NSMutableArray" id="RLL-Tg-qPK"/>
+                        <outletCollection property="labels" destination="RDi-iN-dAJ" collectionClass="NSMutableArray" id="lUu-Nd-MMm"/>
+                        <outletCollection property="labels" destination="o4o-yI-1GU" collectionClass="NSMutableArray" id="V6o-5Q-Ch7"/>
+                        <outletCollection property="labels" destination="3ej-RV-k0C" collectionClass="NSMutableArray" id="MRm-Zg-sOT"/>
+                        <outletCollection property="labels" destination="F02-5v-3Ae" collectionClass="NSMutableArray" id="xpv-3F-GTI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
